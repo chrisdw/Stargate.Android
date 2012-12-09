@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabAtmosphere"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblAtmosphere"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_atmosphere" />
+
+        <TextView
+            android:id="@+id/txtAtmosphere"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblAtmosCR"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_cr" />
+
+        <TextView
+            android:id="@+id/txtAtmosCR"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblPressure"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pressure" />
+
+        <TextView
+            android:id="@+id/txtPressure"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblPen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pen" />
+
+        <TextView
+            android:id="@+id/txtPen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblIncrement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Increment" />
+
+        <TextView
+            android:id="@+id/txtIncrement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+        <TextView
+            android:id="@+id/txtSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblDamage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Damage" />
+
+        <TextView
+            android:id="@+id/txtDamage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+</TableLayout>

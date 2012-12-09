@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabThermos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblThermos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Thermosphere" />
+
+        <TextView
+            android:id="@+id/txtThermos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblThermoCR"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_cr" />
+
+        <TextView
+            android:id="@+id/txtThermoCR"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblOrbit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Orbit" />
+
+        <TextView
+            android:id="@+id/txtOrbit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblTemperature"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperature" />
+
+        <TextView
+            android:id="@+id/txtTemperature"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+</TableLayout>

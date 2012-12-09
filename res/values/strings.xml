@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, WorldViewerActivity!</string>
+    <string name="app_name">Stargate.Android.V22</string>
+    <string name="val_atmosphere">Atmosphere</string>
+    <string name="val_cr">CR</string>
+
+</resources>

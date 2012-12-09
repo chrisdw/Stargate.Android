@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/tabHydrosphere">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblHydrosphere"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hydrosphere" />
+
+        <TextView
+            android:id="@+id/txtHydrosphere"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblRain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Rain" />
+
+        <TextView
+            android:id="@+id/txtRain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblNone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="None" />
+
+        <TextView
+            android:id="@+id/txtNone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblFlood"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Flood" />
+
+        <TextView
+            android:id="@+id/txtFlood"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblStorm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Storm" />
+
+        <TextView
+            android:id="@+id/txtStorm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblWind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Wind" />
+
+        <TextView
+            android:id="@+id/txtWind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+</TableLayout>
