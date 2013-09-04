@@ -8,6 +8,9 @@ public class World {
 	public Thermosphere thermosphere;
 	public Atmosphere atmosphere;
 	public Hydrosphere hydrosphere;
+	public GeosphereBasic geospherebasic;
+	public GeosphereTectonic geospheretectonic;
+	public Biosphere biosphere;
 	
 	public World(LineNumberReader reader) throws IOException {
 		// First we see the [WORLD] tag
@@ -16,5 +19,8 @@ public class World {
 		this.thermosphere = new Thermosphere(reader);
 		this.atmosphere = new Atmosphere(reader);
 		this.hydrosphere = new Hydrosphere(reader);
+		this.geospherebasic = new GeosphereBasic(reader);
+		this.geospheretectonic = new GeosphereTectonic(reader);
+		this.biosphere = new Biosphere(reader);
 	}
 }

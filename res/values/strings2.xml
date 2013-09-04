@@ -5,5 +5,9 @@
     <string name="app_name">Stargate.Android.V22</string>
     <string name="val_atmosphere">Atmosphere</string>
     <string name="val_cr">CR</string>
-
+    <string name="val_geobasic">Geosphere (Basic)</string>
+    <string name="val_special">Special</string>
+    <string name="val_geotectonic">Geosphere (Tectonic)</string>
+    <string name="val_quakenone">Quakes (None)</string>
+    
 </resources>

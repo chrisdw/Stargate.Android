@@ -35,25 +35,39 @@ public class WorldViewerActivity extends TabActivity {
 
 		// Initialize a TabSpec for each tab and add it to the TabHost
 		spec = tabHost
-				.newTabSpec("atmosphere")
-				.setIndicator("Atmosphere",
-						res.getDrawable(R.drawable.ic_launcher))
-				.setContent(R.id.tabAtmosphere);
+				.newTabSpec("Thermosphere")
+				.setIndicator("Thermosphere",
+						res.getDrawable(R.drawable.ic_launcher2))
+				.setContent(R.id.tabThermos);
 		tabHost.addTab(spec);
 
 		spec = tabHost
 				.newTabSpec("atmosphere")
 				.setIndicator("Atmosphere",
-						res.getDrawable(R.drawable.ic_launcher))
+						res.getDrawable(R.drawable.ic_launcher2))
 				.setContent(R.id.tabAtmosphere);
 		tabHost.addTab(spec);
 		
 		spec = tabHost
 				.newTabSpec("hydrosphere")
 				.setIndicator("Hydrosphere",
-						res.getDrawable(R.drawable.ic_launcher))
+						res.getDrawable(R.drawable.ic_launcher2))
 				.setContent(R.id.tabHydrosphere);
 		tabHost.addTab(spec);
+		
+		spec = tabHost
+				.newTabSpec("geospherebasic")
+				.setIndicator("Geosphere (Basic)",
+						res.getDrawable(R.drawable.ic_launcher2))
+				.setContent(R.id.tabGeosphereBasic);
+		tabHost.addTab(spec);		
+		
+		spec = tabHost
+				.newTabSpec("geospheretectonic")
+				.setIndicator("Geosphere (Tectnoic)",
+						res.getDrawable(R.drawable.ic_launcher2))
+				.setContent(R.id.tabGeosphereTectonic);
+		tabHost.addTab(spec);				
 		
 		Bundle b = getIntent().getExtras();
 		String worldFilename = "";
@@ -121,8 +135,12 @@ public class WorldViewerActivity extends TabActivity {
 		setTextView(R.id.txtWind, world.hydrosphere.wind);
 		
 		// Geosphere Basic
+		setTextView(R.id.txGeoBasic, world.geospherebasic.geosphere);
+		setTextView(R.id.txtGeobSpecial, world.geospherebasic.special);
 		
-		// Geoshphere Tectonic
+		// Geosphere Tectonic
+		setTextView(R.id.txGeoTectonic, world.geospheretectonic.geosphere);
+		setTextView(R.id.txtQuakeNone, world.geospheretectonic.quakesnone);	
 		
 		// Biosphere
 		

@@ -5,7 +5,7 @@
     android:layout_height="match_parent" >
 
     <TableRow>
-
+        
         <TextView
             android:id="@+id/lblAtmosphere"
             android:layout_width="fill_parent"
@@ -20,8 +20,8 @@
     </TableRow>
 
     <TableRow>
-
-        <TextView
+        
+      	<TextView
             android:id="@+id/lblAtmosCR"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

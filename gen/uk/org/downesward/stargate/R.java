@@ -95,13 +95,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int file=0x7f020003;
         public static final int folder=0x7f020004;
         public static final int ic_launcher=0x7f020005;
-        public static final int icon=0x7f020006;
-        public static final int list_selector_background=0x7f020007;
-        public static final int list_selector_background_disabled=0x7f020008;
-        public static final int list_selector_background_focus=0x7f020009;
-        public static final int list_selector_background_longpress=0x7f02000a;
-        public static final int list_selector_background_pressed=0x7f02000b;
-        public static final int list_selector_background_transition=0x7f02000c;
+        public static final int ic_launcher2=0x7f020006;
+        public static final int icon=0x7f020007;
+        public static final int list_selector_background=0x7f020008;
+        public static final int list_selector_background_disabled=0x7f020009;
+        public static final int list_selector_background_focus=0x7f02000a;
+        public static final int list_selector_background_longpress=0x7f02000b;
+        public static final int list_selector_background_pressed=0x7f02000c;
+        public static final int list_selector_background_transition=0x7f02000d;
     }
     public static final class id {
         public static final int bottom=0x7f040001;
@@ -110,14 +111,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int center_vertical=0x7f040004;
         public static final int clip_horizontal=0x7f04000b;
         public static final int clip_vertical=0x7f04000a;
-        public static final int collapse_all_menu_item=0x7f040049;
-        public static final int collapsible_menu_item=0x7f04004a;
-        public static final int context_menu_collapse=0x7f040044;
-        public static final int context_menu_delete=0x7f040045;
-        public static final int context_menu_expand_all=0x7f040042;
-        public static final int context_menu_expand_item=0x7f040043;
-        public static final int expand_all_menu_item=0x7f040048;
-        public static final int fancy_menu_item=0x7f040047;
+        public static final int collapse_all_menu_item=0x7f040053;
+        public static final int collapsible_menu_item=0x7f040054;
+        public static final int context_menu_collapse=0x7f04004e;
+        public static final int context_menu_delete=0x7f04004f;
+        public static final int context_menu_expand_all=0x7f04004c;
+        public static final int context_menu_expand_item=0x7f04004d;
+        public static final int expand_all_menu_item=0x7f040052;
+        public static final int fancy_menu_item=0x7f040051;
         public static final int fdButtonCancel=0x7f040023;
         public static final int fdButtonCreate=0x7f040024;
         public static final int fdButtonNew=0x7f04001e;
@@ -134,61 +135,73 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int lblAtmosCR=0x7f04000f;
         public static final int lblAtmosphere=0x7f04000d;
         public static final int lblDamage=0x7f040019;
-        public static final int lblFlood=0x7f04002f;
-        public static final int lblHydrosphere=0x7f040029;
+        public static final int lblFlood=0x7f040039;
+        public static final int lblGeoBasic=0x7f040029;
+        public static final int lblGeoTectonic=0x7f04002e;
+        public static final int lblGeobSpecial=0x7f04002b;
+        public static final int lblHydrosphere=0x7f040033;
         public static final int lblIncrement=0x7f040015;
-        public static final int lblNone=0x7f04002d;
-        public static final int lblOrbit=0x7f04003a;
+        public static final int lblNone=0x7f040037;
+        public static final int lblOrbit=0x7f040044;
         public static final int lblPen=0x7f040013;
         public static final int lblPressure=0x7f040011;
-        public static final int lblRain=0x7f04002b;
+        public static final int lblQuakeNone=0x7f040030;
+        public static final int lblRain=0x7f040035;
         public static final int lblSave=0x7f040017;
-        public static final int lblStorm=0x7f040031;
-        public static final int lblTemperature=0x7f04003c;
-        public static final int lblThermoCR=0x7f040038;
-        public static final int lblThermos=0x7f040036;
-        public static final int lblWind=0x7f040033;
+        public static final int lblStorm=0x7f04003b;
+        public static final int lblTemperature=0x7f040046;
+        public static final int lblThermoCR=0x7f040042;
+        public static final int lblThermos=0x7f040040;
+        public static final int lblWind=0x7f04003d;
         public static final int left=0x7f040002;
-        public static final int linearLayout1=0x7f040041;
+        public static final int linearLayout1=0x7f04004b;
         public static final int path=0x7f040025;
         public static final int relativeLayout01=0x7f04001b;
         public static final int right=0x7f040003;
-        public static final int simple_menu_item=0x7f040046;
+        public static final int simple_menu_item=0x7f040050;
         public static final int tabAtmosphere=0x7f04000c;
-        public static final int tabHydrosphere=0x7f040028;
-        public static final int tabThermos=0x7f040035;
+        public static final int tabGeosphereBasic=0x7f040028;
+        public static final int tabGeosphereTectonic=0x7f04002d;
+        public static final int tabHydrosphere=0x7f040032;
+        public static final int tabThermos=0x7f04003f;
         public static final int textViewFilename=0x7f040021;
         public static final int top=0x7f040000;
-        public static final int treeview_list_item_frame=0x7f040040;
-        public static final int treeview_list_item_image=0x7f04003f;
-        public static final int treeview_list_item_image_layout=0x7f04003e;
+        public static final int treeview_list_item_frame=0x7f04004a;
+        public static final int treeview_list_item_image=0x7f040049;
+        public static final int treeview_list_item_image_layout=0x7f040048;
+        public static final int txGeoBasic=0x7f04002a;
+        public static final int txGeoTectonic=0x7f04002f;
         public static final int txtAtmosCR=0x7f040010;
         public static final int txtAtmosphere=0x7f04000e;
         public static final int txtDamage=0x7f04001a;
-        public static final int txtFlood=0x7f040030;
-        public static final int txtHydrosphere=0x7f04002a;
+        public static final int txtFlood=0x7f04003a;
+        public static final int txtGeobSpecial=0x7f04002c;
+        public static final int txtHydrosphere=0x7f040034;
         public static final int txtIncrement=0x7f040016;
-        public static final int txtNone=0x7f04002e;
-        public static final int txtOrbit=0x7f04003b;
+        public static final int txtNone=0x7f040038;
+        public static final int txtOrbit=0x7f040045;
         public static final int txtPen=0x7f040014;
         public static final int txtPressure=0x7f040012;
-        public static final int txtRain=0x7f04002c;
+        public static final int txtQuakeNone=0x7f040031;
+        public static final int txtRain=0x7f040036;
         public static final int txtSave=0x7f040018;
-        public static final int txtStorm=0x7f040032;
-        public static final int txtTemperature=0x7f04003d;
-        public static final int txtThermoCR=0x7f040039;
-        public static final int txtThermos=0x7f040037;
-        public static final int txtWind=0x7f040034;
+        public static final int txtStorm=0x7f04003c;
+        public static final int txtTemperature=0x7f040047;
+        public static final int txtThermoCR=0x7f040043;
+        public static final int txtThermos=0x7f040041;
+        public static final int txtWind=0x7f04003e;
     }
     public static final class layout {
         public static final int atmosphere=0x7f030000;
         public static final int file_dialog_main=0x7f030001;
         public static final int file_dialog_row=0x7f030002;
-        public static final int hydrosphere=0x7f030003;
-        public static final int main=0x7f030004;
-        public static final int thermosphere=0x7f030005;
-        public static final int tree_list_item_wrapper=0x7f030006;
-        public static final int worldviewer=0x7f030007;
+        public static final int geospherebasic=0x7f030003;
+        public static final int geospheretectonic=0x7f030004;
+        public static final int hydrosphere=0x7f030005;
+        public static final int main=0x7f030006;
+        public static final int thermosphere=0x7f030007;
+        public static final int tree_list_item_wrapper=0x7f030008;
+        public static final int worldviewer=0x7f030009;
     }
     public static final class menu {
         public static final int context_menu=0x7f080000;
@@ -223,6 +236,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int simple_menu_name=0x7f050009;
         public static final int val_atmosphere=0x7f05001a;
         public static final int val_cr=0x7f05001b;
+        public static final int val_geobasic=0x7f05001c;
+        public static final int val_geotectonic=0x7f05001e;
+        public static final int val_quakenone=0x7f05001f;
+        public static final int val_special=0x7f05001d;
     }
     public static final class style {
         public static final int treeViewListStyle=0x7f070000;
@@ -267,7 +284,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:collapsible
+          @attr name uk.org.downesward.stargate:collapsible
         */
         public static final int TreeViewList_collapsible = 0;
         /**
@@ -281,7 +298,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:handle_trackball_press
+          @attr name uk.org.downesward.stargate:handle_trackball_press
         */
         public static final int TreeViewList_handle_trackball_press = 4;
         /**
@@ -297,7 +314,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:indent_width
+          @attr name uk.org.downesward.stargate:indent_width
         */
         public static final int TreeViewList_indent_width = 3;
         /**
@@ -309,7 +326,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name android:indicator_background
+          @attr name uk.org.downesward.stargate:indicator_background
         */
         public static final int TreeViewList_indicator_background = 6;
         /**
@@ -340,7 +357,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 				The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the
 				left edge, and neither will clip both edges. </td></tr>
 </table>
-          @attr name android:indicator_gravity
+          @attr name uk.org.downesward.stargate:indicator_gravity
         */
         public static final int TreeViewList_indicator_gravity = 5;
         /**
@@ -352,7 +369,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name android:row_background
+          @attr name uk.org.downesward.stargate:row_background
         */
         public static final int TreeViewList_row_background = 7;
         /**
@@ -364,7 +381,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name android:src_collapsed
+          @attr name uk.org.downesward.stargate:src_collapsed
         */
         public static final int TreeViewList_src_collapsed = 2;
         /**
@@ -376,7 +393,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name android:src_expanded
+          @attr name uk.org.downesward.stargate:src_expanded
         */
         public static final int TreeViewList_src_expanded = 1;
     };

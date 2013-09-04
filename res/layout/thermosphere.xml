@@ -20,8 +20,7 @@
     </TableRow>
 
     <TableRow>
-
-        <TextView
+         <TextView
             android:id="@+id/lblThermoCR"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabGeosphereTectonic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblGeoTectonic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_geotectonic" />
+
+        <TextView
+            android:id="@+id/txGeoTectonic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+    
+    <TableRow>
+        
+      	<TextView
+            android:id="@+id/lblQuakeNone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_quakenone" />
+
+        <TextView
+            android:id="@+id/txtQuakeNone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>    
+</TableLayout>
