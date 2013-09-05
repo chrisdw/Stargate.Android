@@ -11,6 +11,8 @@ public class World {
 	public GeosphereBasic geospherebasic;
 	public GeosphereTectonic geospheretectonic;
 	public Biosphere biosphere;
+	public Seasons seasons;
+	public Anthrosphere anthrosphere;
 	
 	public World(LineNumberReader reader) throws IOException {
 		// First we see the [WORLD] tag
@@ -22,5 +24,7 @@ public class World {
 		this.geospherebasic = new GeosphereBasic(reader);
 		this.geospheretectonic = new GeosphereTectonic(reader);
 		this.biosphere = new Biosphere(reader);
+		this.seasons = new Seasons(reader);
+		this.anthrosphere = new Anthrosphere(reader);
 	}
 }

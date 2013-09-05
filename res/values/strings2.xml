@@ -2,12 +2,28 @@
 <resources>
 
     <string name="hello">Hello World, WorldViewerActivity!</string>
-    <string name="app_name">Stargate.Android.V22</string>
+    <string name="app_name">Stargate RPG Helper</string>
     <string name="val_atmosphere">Atmosphere</string>
     <string name="val_cr">CR</string>
     <string name="val_geobasic">Geosphere (Basic)</string>
     <string name="val_special">Special</string>
     <string name="val_geotectonic">Geosphere (Tectonic)</string>
     <string name="val_quakenone">Quakes (None)</string>
-    
+    <string name="val_seasons">Seasons</string>
+    <string name="val_spring">Spring</string>
+    <string name="val_springtemp">Spring Temperature</string> 
+    <string name="val_summer">Summer</string>
+    <string name="val_summertemp">Summer Temperature</string>   
+    <string name="val_autumn">Autumn</string>
+    <string name="val_autumntemp">Autumn Temperature</string>
+    <string name="val_winter">Winter</string>
+    <string name="val_wintertemp">Winter Temperature</string>
+    <string name="val_anthrosphere">Anthrosphere</string>                      
+    <string name="val_advances">Advances</string>                      
+    <string name="val_picks">Picks</string>
+    <string name="val_rp">RP</string>
+    <string name="val_vehicles">Vehicles</string>     
+    <string name="val_weapons">Weapons</string> 
+    <string name="val_mnu_open">Open</string> 
+    <string name="val_menu_open_known">Open Known World</string>      
 </resources>

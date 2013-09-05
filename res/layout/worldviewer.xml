@@ -20,7 +20,11 @@
 				<include layout="@layout/thermosphere"/>
 				<include layout="@layout/atmosphere"/>
 				<include layout="@layout/hydrosphere"/>
-				
+				<include layout="@layout/geospherebasic"/>
+				<include layout="@layout/geospheretectonic"/>
+				<include layout="@layout/biosphere"/>
+				<include layout="@layout/seasons"/>
+				<include layout="@layout/anthrosphere"/>
 			</FrameLayout>
 		</LinearLayout>
 	</TabHost>

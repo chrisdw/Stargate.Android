@@ -23,7 +23,16 @@ public class CustomPagerAdapter extends PagerAdapter {
 		pageTitles.add("Atmosphere");
 		pageTitles.add("Hydrosphere");
 		pageTitles.add("Geosphere (Basic)");
-
+		pageTitles.add("Geosphere (Tectonic)");
+		pageTitles.add("Biosphere");
+		pageTitles.add("Seasons");
+		pageTitles.add("Anthrosphere");
+		pageTitles.add("Military");
+		pageTitles.add("Government");
+		pageTitles.add("Xenosphere");
+		pageTitles.add("Origin");
+		pageTitles.add("Origin");
+		pageTitles.add("Notes");
 	}
 
 	@Override

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   
+      <item android:id="@+id/mnu_world_open" android:title="@string/val_mnu_open" android:titleCondensed="Open" android:icon="@drawable/ic_menu_archive" android:checkable="false"></item>
+     <item android:id="@+id/mnu_known_world_open" android:title="@string/val_menu_open_known" android:titleCondensed="Known" android:icon="@drawable/ic_menu_archive" android:checkable="false"></item>
+   
+
+</menu>

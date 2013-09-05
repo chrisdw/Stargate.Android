@@ -1,97 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabAnthrosphere"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/tabHydrosphere">
-
+    android:layout_height="match_parent" >
+    
     <TableRow>
-
+        
         <TextView
-            android:id="@+id/lblHydrosphere"
+            android:id="@+id/lblAnthrosphere"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Hydrosphere" />
+            android:text="@string/val_anthrosphere" />
 
         <TextView
-            android:id="@+id/txtHydrosphere"
+            android:id="@+id/txtAnthrosphere"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="" />
     </TableRow>
-
+    
     <TableRow>
-
+        
         <TextView
-            android:id="@+id/lblRain"
+            android:id="@+id/lblAdvances"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Rain" />
+            android:text="@string/val_advances" />
 
         <TextView
-            android:id="@+id/txtRain"
+            android:id="@+id/txtAdvances"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>    
+
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblWeapons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_weapons" />
+
+        <TextView
+            android:id="@+id/txtWeapons"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="" />
     </TableRow>
-
+    
     <TableRow>
-
+        
         <TextView
-            android:id="@+id/lblNone"
+            android:id="@+id/lblVehicles"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="None" />
+            android:text="@string/val_vehicles" />
 
         <TextView
-            android:id="@+id/txtNone"
+            android:id="@+id/txtVehicles"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow> 
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblPicks"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_picks" />
+
+        <TextView
+            android:id="@+id/txtPicks"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow> 
+ 
+     <TableRow>
+        
+        <TextView
+            android:id="@+id/lblRP"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_rp" />
+
+        <TextView
+            android:id="@+id/txtRP"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="" />
     </TableRow>
-
-    <TableRow>
-
-        <TextView
-            android:id="@+id/lblFlood"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Flood" />
-
-        <TextView
-            android:id="@+id/txtFlood"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="" />
-    </TableRow>
-
-    <TableRow>
-
-        <TextView
-            android:id="@+id/lblStorm"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Storm" />
-
-        <TextView
-            android:id="@+id/txtStorm"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="" />
-    </TableRow>
-
-    <TableRow>
-
-        <TextView
-            android:id="@+id/lblWind"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Wind" />
-
-        <TextView
-            android:id="@+id/txtWind"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="" />
-    </TableRow>
-
 </TableLayout>

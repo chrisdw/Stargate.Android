@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabSeasons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblSeasons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_seasons" />
+
+        <TextView
+            android:id="@+id/txtSeasons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblSpring"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_spring" />
+
+        <TextView
+            android:id="@+id/txtSpring"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>    
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblSpringTemp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_springtemp" />
+
+        <TextView
+            android:id="@+id/txtSpringTemp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow> 
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblSummer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_summer" />
+
+        <TextView
+            android:id="@+id/txtSummer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>    
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblSummerTemp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_summertemp" />
+
+        <TextView
+            android:id="@+id/txtSummerTemp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>  
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblAutumn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_autumn" />
+
+        <TextView
+            android:id="@+id/txtAutumn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>    
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblAutumnTemp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_autumntemp" />
+
+        <TextView
+            android:id="@+id/txtAutumnTemp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblWinter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_winter" />
+
+        <TextView
+            android:id="@+id/txtWinter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>    
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblWinterTemp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_wintertemp" />
+
+        <TextView
+            android:id="@+id/txtWinterTemp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>      
+</TableLayout>

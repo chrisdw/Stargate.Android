@@ -11,6 +11,9 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Environment;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.TabHost;
 import android.widget.TextView;
 
@@ -21,6 +24,7 @@ public class WorldViewerActivity extends TabActivity {
 	
 	private static final int REQUEST_SAVE = 0;
 	private static final int REQUEST_OPEN = 1;
+	private static final int REQUEST_OPEN_KNOWN = 2;
 	private World world;
 	
 	/** Called when the activity is first created. */
@@ -64,9 +68,30 @@ public class WorldViewerActivity extends TabActivity {
 		
 		spec = tabHost
 				.newTabSpec("geospheretectonic")
-				.setIndicator("Geosphere (Tectnoic)",
+				.setIndicator("Geosphere (Tectonic)",
 						res.getDrawable(R.drawable.ic_launcher2))
 				.setContent(R.id.tabGeosphereTectonic);
+		tabHost.addTab(spec);
+		
+		spec = tabHost
+				.newTabSpec("biosphere")
+				.setIndicator("Biosphere",
+						res.getDrawable(R.drawable.ic_launcher2))
+				.setContent(R.id.tabBiosphere);
+		tabHost.addTab(spec);
+		
+		spec = tabHost
+				.newTabSpec("seasons")
+				.setIndicator("Seasons",
+						res.getDrawable(R.drawable.ic_launcher2))
+				.setContent(R.id.tabSeasons);
+		tabHost.addTab(spec);	
+		
+		spec = tabHost
+				.newTabSpec("anthrosphere")
+				.setIndicator("Anthrosphere",
+						res.getDrawable(R.drawable.ic_launcher2))
+				.setContent(R.id.tabAnthrosphere);
 		tabHost.addTab(spec);				
 		
 		Bundle b = getIntent().getExtras();
@@ -75,7 +100,7 @@ public class WorldViewerActivity extends TabActivity {
 			worldFilename = b.getString("WORLDFILE");
 		}
 		if (worldFilename.length() == 0) {
-			geWorldFile();
+			getWorldFile();
 		}
 		else {
 			try {
@@ -91,7 +116,7 @@ public class WorldViewerActivity extends TabActivity {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		
-		if (requestCode == REQUEST_OPEN) {
+		if (requestCode == REQUEST_OPEN || requestCode == REQUEST_OPEN_KNOWN) {
 			if (resultCode == RESULT_OK) {
 				String path = data.getStringExtra(FileDialog.RESULT_PATH);
 				try {
@@ -135,18 +160,38 @@ public class WorldViewerActivity extends TabActivity {
 		setTextView(R.id.txtWind, world.hydrosphere.wind);
 		
 		// Geosphere Basic
-		setTextView(R.id.txGeoBasic, world.geospherebasic.geosphere);
+		setTextView(R.id.txtGeoBasic, world.geospherebasic.geosphere);
 		setTextView(R.id.txtGeobSpecial, world.geospherebasic.special);
 		
 		// Geosphere Tectonic
-		setTextView(R.id.txGeoTectonic, world.geospheretectonic.geosphere);
+		setTextView(R.id.txtGeoTectonic, world.geospheretectonic.geosphere);
 		setTextView(R.id.txtQuakeNone, world.geospheretectonic.quakesnone);	
 		
 		// Biosphere
+		setTextView(R.id.txtBiosphere, world.biosphere.biosphere);
+		setTextView(R.id.txtMove, world.biosphere.move);
+		setTextView(R.id.txtTemperature, world.biosphere.temperature);
+		setTextView(R.id.txtRain, world.biosphere.rain);
+		setTextView(R.id.txtVegetation, world.biosphere.vegetation);
 		
 		// Seasons
+		setTextView(R.id.txtSeasons, world.seasons.seasons);		
+		setTextView(R.id.txtSpring, world.seasons.spring);		
+		setTextView(R.id.txtSpringTemp, world.seasons.springtemprature);		
+		setTextView(R.id.txtSummer, world.seasons.summer);		
+		setTextView(R.id.txtSummerTemp, world.seasons.summertemprature);		
+		setTextView(R.id.txtAutumn, world.seasons.autumn);		
+		setTextView(R.id.txtAutumnTemp, world.seasons.autumntemprature);
+		setTextView(R.id.txtWinter, world.seasons.winter);		
+		setTextView(R.id.txtWinterTemp, world.seasons.wintertemprature);
 		
 		// Anthrosphere
+		setTextView(R.id.txtAnthrosphere, world.anthrosphere.anthrosphere);
+		setTextView(R.id.txtAdvances, world.anthrosphere.advances);
+		setTextView(R.id.txtWeapons, world.anthrosphere.weapons);
+		setTextView(R.id.txtVehicles, world.anthrosphere.vehicles);
+		setTextView(R.id.txtPicks, world.anthrosphere.picks);
+		setTextView(R.id.txtRP, world.anthrosphere.rp);
 		
 		// Military
 		
@@ -159,16 +204,46 @@ public class WorldViewerActivity extends TabActivity {
 		// Notes
 	}
 	
-	private void setTextView(int id, String value) {
-		TextView view = (TextView)this.findViewById(id);
-		view.setText(value);
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.stargate, menu);
+		return true;
 	}
 	
-	private void geWorldFile() {
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		int itemId = item.getItemId();
+		if (itemId == R.id.mnu_world_open) {
+			getWorldFile();
+		} else if (itemId == R.id.mnu_known_world_open) {
+			getKnownWorldFile();
+		} else {
+			return super.onOptionsItemSelected(item);
+		}
+		return true;
+	}	
+	
+	private void setTextView(int id, String value) {
+		TextView view = (TextView)this.findViewById(id);
+		if (view != null && value != null) {
+			view.setText(value);
+		}
+	}
+	
+	private void getWorldFile() {
 		Intent intent = new Intent(this.getBaseContext(), FileDialog.class);
 		intent.putExtra(FileDialog.START_PATH,
 				Environment.getExternalStorageDirectory());
 		intent.putExtra(FileDialog.SELECTION_MODE, SelectionMode.MODE_OPEN);
 		this.startActivityForResult(intent, REQUEST_OPEN);
 	}
+	
+	private void getKnownWorldFile() {
+		Intent intent = new Intent(this.getBaseContext(), FileDialog.class);
+		intent.putExtra(FileDialog.START_PATH,
+				Environment.getDataDirectory() + "known worlds");
+		intent.putExtra(FileDialog.SELECTION_MODE, SelectionMode.MODE_OPEN);
+		this.startActivityForResult(intent, REQUEST_OPEN);
+	}	
 }
