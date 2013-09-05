@@ -3,6 +3,8 @@ package uk.org.downesward.stargate;
 import java.io.IOException;
 import java.io.LineNumberReader;
 
+import uk.org.downesward.utiliites.StringUtilities;
+
 public class Seasons {
 	public String seasons;
 	public String spring;
@@ -17,14 +19,14 @@ public class Seasons {
 	public Seasons(LineNumberReader reader) throws IOException {
 		// First we get the [SEASON] tag
 		reader.readLine();
-		this.seasons = reader.readLine().split("=")[1];
-		this.spring = reader.readLine().split("=")[1];
-		this.springtemprature = reader.readLine().split("=")[1];
-		this.summer = reader.readLine().split("=")[1];
-		this.summertemprature = reader.readLine().split("=")[1];
-		this.autumn = reader.readLine().split("=")[1];
-		this.autumntemprature = reader.readLine().split("=")[1];
-		this.winter = reader.readLine().split("=")[1];
-		this.wintertemprature = reader.readLine().split("=")[1];		
+		this.seasons = StringUtilities.getPropertyValue(reader);
+		this.spring = StringUtilities.getPropertyValue(reader);
+		this.springtemprature = StringUtilities.getPropertyValue(reader);
+		this.summer = StringUtilities.getPropertyValue(reader);
+		this.summertemprature = StringUtilities.getPropertyValue(reader);
+		this.autumn = StringUtilities.getPropertyValue(reader);
+		this.autumntemprature = StringUtilities.getPropertyValue(reader);
+		this.winter = StringUtilities.getPropertyValue(reader);
+		this.wintertemprature = StringUtilities.getPropertyValue(reader);		
 	}
 }

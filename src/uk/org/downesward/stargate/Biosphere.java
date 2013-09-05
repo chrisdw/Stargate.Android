@@ -3,6 +3,8 @@ package uk.org.downesward.stargate;
 import java.io.IOException;
 import java.io.LineNumberReader;
 
+import uk.org.downesward.utiliites.StringUtilities;
+
 public class Biosphere {
 	public String biosphere;
 	public String move;
@@ -13,10 +15,10 @@ public class Biosphere {
 	public Biosphere(LineNumberReader reader) throws IOException {
 		// First we get the [BIO] tag
 		reader.readLine();
-		this.biosphere = reader.readLine().split("=")[1];
-		this.move = reader.readLine().split("=")[1];
-		this.temperature = reader.readLine().split("=")[1];
-		this.rain = reader.readLine().split("=")[1];
-		this.vegetation = reader.readLine().split("=")[1];
+		this.biosphere = StringUtilities.getPropertyValue(reader);
+		this.move = StringUtilities.getPropertyValue(reader);
+		this.temperature = StringUtilities.getPropertyValue(reader);
+		this.rain = StringUtilities.getPropertyValue(reader);
+		this.vegetation = StringUtilities.getPropertyValue(reader);
 	}
 }

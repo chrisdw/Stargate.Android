@@ -242,7 +242,7 @@ public class WorldViewerActivity extends TabActivity {
 	private void getKnownWorldFile() {
 		Intent intent = new Intent(this.getBaseContext(), FileDialog.class);
 		intent.putExtra(FileDialog.START_PATH,
-				Environment.getDataDirectory() + "known worlds");
+				Environment.getDataDirectory() + "data/Stargate.Android/known worlds");
 		intent.putExtra(FileDialog.SELECTION_MODE, SelectionMode.MODE_OPEN);
 		this.startActivityForResult(intent, REQUEST_OPEN);
 	}	

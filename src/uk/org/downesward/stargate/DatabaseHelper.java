@@ -25,7 +25,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	public DatabaseHelper(Context context, String name, CursorFactory factory,
 			int version) {
 		super(context, name, factory, version);
-		DB_PATH = context.getFilesDir().getPath() + "data/Stargate.Android.V22/databases/";
+		DB_PATH = context.getFilesDir().getPath() + "data/Stargate.Android/databases/";
 		this.myContext = context;
 	}
 

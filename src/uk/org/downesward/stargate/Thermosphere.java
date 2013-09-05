@@ -3,6 +3,8 @@ package uk.org.downesward.stargate;
 import java.io.IOException;
 import java.io.LineNumberReader;
 
+import uk.org.downesward.utiliites.StringUtilities;
+
 public class Thermosphere {
 	public String thermo;
 	public String cr;
@@ -12,9 +14,9 @@ public class Thermosphere {
 	public Thermosphere(LineNumberReader reader) throws IOException {
 		// First we get the [THERMO] tag
 		reader.readLine();
-		this.thermo = reader.readLine().split("=")[1];
-		this.cr = reader.readLine().split("=")[1];
-		this.orbit = reader.readLine().split("=")[1];
-		this.temp = reader.readLine().split("=")[1];
+		this.thermo = StringUtilities.getPropertyValue(reader);
+		this.cr = StringUtilities.getPropertyValue(reader);
+		this.orbit = StringUtilities.getPropertyValue(reader);
+		this.temp = StringUtilities.getPropertyValue(reader);
 	}
 }
