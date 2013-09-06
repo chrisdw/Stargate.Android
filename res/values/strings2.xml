@@ -45,5 +45,7 @@
 	<string name="val_origincultureroots">Origin (Culture Roots)</string>  
 	<string name="val_description">Description</string>
 	<string name="val_notes">Notes</string>  
-	
+	<string name="val_worlds">Worlds</string>  
+	<string name="val_scenarios">Scenarios</string>  
+		
 </resources>
