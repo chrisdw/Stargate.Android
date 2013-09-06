@@ -277,7 +277,7 @@ public class WorldViewerActivity extends TabActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.stargate, menu);
+		inflater.inflate(R.menu.worldviewer, menu);
 		return true;
 	}
 	
