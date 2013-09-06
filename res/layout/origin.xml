@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/tabOrigin">
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblOriginCultureAge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_origincultureage" />
+
+        <TextView
+            android:id="@+id/txtOriginCultureAge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+ 
+        <TableRow>
+        
+        <TextView
+            android:id="@+id/lblOriginCultureRoots"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_origincultureroots" />
+
+        <TextView
+            android:id="@+id/txtOriginCultureRoots"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+    
+        <TableRow>
+        
+        <TextView
+            android:id="@+id/lblOriginCultureDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_description" />
+
+        <TextView
+            android:id="@+id/txtOriginCultureDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>        
+</TableLayout>

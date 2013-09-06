@@ -9,6 +9,13 @@
     <string name="val_special">Special</string>
     <string name="val_geotectonic">Geosphere (Tectonic)</string>
     <string name="val_quakenone">Quakes (None)</string>
+    <string name="val_quakeminor">Quakes (Minor)</string>
+    <string name="val_quakemoderate">Quakes (Moderate)</string>
+    <string name="val_quakemajor">Quakes (Major)</string>
+    <string name="val_volcanonone">Volcano (None)</string>
+    <string name="val_volcanosmall">Volcano (Small)</string>
+	<string name="val_volcanomedium">Volcano (Medium)</string>   
+	<string name="val_volcanolarge">Volcano (Large)</string>
     <string name="val_seasons">Seasons</string>
     <string name="val_spring">Spring</string>
     <string name="val_springtemp">Spring Temperature</string> 
@@ -25,5 +32,18 @@
     <string name="val_vehicles">Vehicles</string>     
     <string name="val_weapons">Weapons</string> 
     <string name="val_mnu_open">Open</string> 
-    <string name="val_menu_open_known">Open Known World</string>      
+    <string name="val_menu_open_known">Open Known World</string>
+    <string name="val_government">Government</string>
+    <string name="val_ruler">Ruler</string>
+    <string name="val_xenophobia">Xenophobia</string>
+	<string name="val_disposition">Disposition</string> 
+	<string name="val_modifier">Modifier</string> 
+	<string name="val_civilrights">Civil Rights</string>
+	<string name="val_subjagation">Subjagation</string> 
+	<string name="val_genocide">Genocide</string>  
+	<string name="val_origincultureage">Origin (Culture Age)</string>  
+	<string name="val_origincultureroots">Origin (Culture Roots)</string>  
+	<string name="val_description">Description</string>
+	<string name="val_notes">Notes</string>  
+	
 </resources>

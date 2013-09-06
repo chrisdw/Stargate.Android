@@ -92,7 +92,49 @@ public class WorldViewerActivity extends TabActivity {
 				.setIndicator("Anthrosphere",
 						res.getDrawable(R.drawable.ic_launcher2))
 				.setContent(R.id.tabAnthrosphere);
-		tabHost.addTab(spec);				
+		tabHost.addTab(spec);		
+		
+		spec = tabHost
+				.newTabSpec("military")
+				.setIndicator("Military",
+						res.getDrawable(R.drawable.ic_launcher2))
+				.setContent(R.id.tabMilitary);
+		tabHost.addTab(spec);
+		
+		spec = tabHost
+				.newTabSpec("government")
+				.setIndicator("Government",
+						res.getDrawable(R.drawable.ic_launcher2))
+				.setContent(R.id.tabGovernment);
+		tabHost.addTab(spec);			
+		
+		spec = tabHost
+				.newTabSpec("xenophobia")
+				.setIndicator("Xenophobia",
+						res.getDrawable(R.drawable.ic_launcher2))
+				.setContent(R.id.tabXenophobia);
+		tabHost.addTab(spec);	
+		
+		spec = tabHost
+				.newTabSpec("civilrights")
+				.setIndicator("Civil Rights",
+						res.getDrawable(R.drawable.ic_launcher2))
+				.setContent(R.id.tabCivilRights);
+		tabHost.addTab(spec);	
+		
+		spec = tabHost
+				.newTabSpec("origin")
+				.setIndicator("Origin",
+						res.getDrawable(R.drawable.ic_launcher2))
+				.setContent(R.id.tabOrigin);
+		tabHost.addTab(spec);		
+		
+		spec = tabHost
+				.newTabSpec("notes")
+				.setIndicator("Notes",
+						res.getDrawable(R.drawable.ic_launcher2))
+				.setContent(R.id.tabNotes);
+		tabHost.addTab(spec);			
 		
 		Bundle b = getIntent().getExtras();
 		String worldFilename = "";
@@ -166,6 +208,14 @@ public class WorldViewerActivity extends TabActivity {
 		// Geosphere Tectonic
 		setTextView(R.id.txtGeoTectonic, world.geospheretectonic.geosphere);
 		setTextView(R.id.txtQuakeNone, world.geospheretectonic.quakesnone);	
+		setTextView(R.id.txtQuakeMinor, world.geospheretectonic.quakesminor);
+		setTextView(R.id.txtQuakeModerate, world.geospheretectonic.quakesmoderate);
+		setTextView(R.id.txtQuakeMajor, world.geospheretectonic.quakesmajor);
+		
+		setTextView(R.id.txtVolcanoNone, world.geospheretectonic.volcanoesnone);
+		setTextView(R.id.txtVolcanoSmall, world.geospheretectonic.volcanoessmall);
+		setTextView(R.id.txtVolcanoMedium, world.geospheretectonic.volcanoesmedium);
+		setTextView(R.id.txtVolcanoLarge, world.geospheretectonic.volcanoeslarge);
 		
 		// Biosphere
 		setTextView(R.id.txtBiosphere, world.biosphere.biosphere);
@@ -194,14 +244,34 @@ public class WorldViewerActivity extends TabActivity {
 		setTextView(R.id.txtRP, world.anthrosphere.rp);
 		
 		// Military
+		setTextView(R.id.txtMilitary, world.military.military);
+		setTextView(R.id.txtForce, world.military.force);
+		setTextView(R.id.txtSquadSize, world.military.squadsize);
+		setTextView(R.id.txtCondition, world.military.condition);
 		
 		// Government
+		setTextView(R.id.txtGovernment, world.government.government);
+		setTextView(R.id.txtRuler, world.government.ruler);
+		
+		// Xenophobia
+		setTextView(R.id.txtXenophobia, world.xenophobia.xenophobia);
+		setTextView(R.id.txtDisposition, world.xenophobia.disposition);
+		setTextView(R.id.txtModifier, world.xenophobia.modifier);
 		
 		// Civil Rights
+		setTextView(R.id.txtCivilRights, world.civilrights.civilrights);
+		setTextView(R.id.txtSubjagation, world.civilrights.subjagation);
+		setTextView(R.id.txtGenocide, world.civilrights.genocide);
 		
-		// Origin
+		// Origin/Culture Age
+		setTextView(R.id.txtOriginCultureAge, world.origincultureage.origincultureage);
+		
+		// Origin/Culture Roots
+		setTextView(R.id.txtOriginCultureRoots, world.origincultureroots.origincultureroots);
+		setTextView(R.id.txtOriginCultureDescription, world.origincultureroots.description);
 		
 		// Notes
+		setTextView(R.id.txtNotes, world.notes);
 	}
 	
 	@Override

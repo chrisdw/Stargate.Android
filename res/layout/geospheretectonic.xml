@@ -33,4 +33,109 @@
             android:layout_height="wrap_content"
             android:text="" />
     </TableRow>    
+    
+    <TableRow>
+        
+      	<TextView
+            android:id="@+id/lblQuakeMinor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_quakeminor" />
+
+        <TextView
+            android:id="@+id/txtQuakeMinor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow> 
+    
+    <TableRow>
+        
+      	<TextView
+            android:id="@+id/lblQuakeModerate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_quakemoderate" />
+
+        <TextView
+            android:id="@+id/txtQuakeModerate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow> 
+    
+    <TableRow>
+        
+      	<TextView
+            android:id="@+id/lblQuakeMajor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_quakemajor" />
+
+        <TextView
+            android:id="@+id/txtQuakeMajor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow> 
+    
+    <TableRow>
+        
+      	<TextView
+            android:id="@+id/lblVolcanoNone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_volcanonone" />
+
+        <TextView
+            android:id="@+id/txtVolcanoNone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>  
+    
+    <TableRow>
+        
+      	<TextView
+            android:id="@+id/lblVolcanoSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_volcanosmall" />
+
+        <TextView
+            android:id="@+id/txtVolcanoSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow> 
+    
+    <TableRow>
+        
+      	<TextView
+            android:id="@+id/lblVolcanoMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_volcanomedium" />
+
+        <TextView
+            android:id="@+id/txtVolcanoMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>    
+    
+    <TableRow>
+        
+      	<TextView
+            android:id="@+id/lblVolcanoLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_volcanolarge" />
+
+        <TextView
+            android:id="@+id/txtVolcanoLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>    
 </TableLayout>

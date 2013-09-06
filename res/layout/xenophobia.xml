@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/tabXenophobia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblXenophobia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_xenophobia" />
+
+        <TextView
+            android:id="@+id/txtXenophobia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblDisposition"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_disposition" />
+
+        <TextView
+            android:id="@+id/txtDisposition"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/lblModifier"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_modifier" />
+
+        <TextView
+            android:id="@+id/txtModifier"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>       
+</TableLayout>

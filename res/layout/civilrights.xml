@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabCivilRights"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <TableRow>
+        
+        <TextView
+            android:id="@+id/lblCivilRights"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_civilrights" />
+
+        <TextView
+            android:id="@+id/txtCivilRights"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+     <TableRow>
+        
+        <TextView
+            android:id="@+id/lblSubjagation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_subjagation" />
+
+        <TextView
+            android:id="@+id/txtSubjagation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>     
+    
+     <TableRow>
+        
+        <TextView
+            android:id="@+id/lblGenocide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_genocide" />
+
+        <TextView
+            android:id="@+id/txtGenocide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>      
+</TableLayout>

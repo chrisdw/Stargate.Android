@@ -15,6 +15,13 @@ public class World {
 	public Biosphere biosphere;
 	public Seasons seasons;
 	public Anthrosphere anthrosphere;
+	public Military military;
+	public Government government;
+	public Xenophobia xenophobia;
+	public CivilRights civilrights;
+	public OriginCultureAge origincultureage;
+	public OriginCultureRoots origincultureroots;
+	public String notes;
 	
 	public World(LineNumberReader reader) throws IOException {
 		// First we see the [WORLD] tag
@@ -28,5 +35,12 @@ public class World {
 		this.biosphere = new Biosphere(reader);
 		this.seasons = new Seasons(reader);
 		this.anthrosphere = new Anthrosphere(reader);
+		this.military = new Military(reader);
+		this.government = new Government(reader);
+		this.xenophobia = new Xenophobia(reader);
+		this.civilrights = new CivilRights(reader);
+		this.origincultureage = new OriginCultureAge(reader);
+		this.origincultureroots = new OriginCultureRoots(reader);
+		this.notes = StringUtilities.getPropertyValue(reader);
 	}
 }

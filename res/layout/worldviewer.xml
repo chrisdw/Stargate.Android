@@ -25,6 +25,12 @@
 				<include layout="@layout/biosphere"/>
 				<include layout="@layout/seasons"/>
 				<include layout="@layout/anthrosphere"/>
+				<include layout="@layout/military"/>
+				<include layout="@layout/government"/>
+				<include layout="@layout/xenophobia"/>
+				<include layout="@layout/civilrights"/>
+				<include layout="@layout/origin"/>
+				<include layout="@layout/notes"/>
 			</FrameLayout>
 		</LinearLayout>
 	</TabHost>

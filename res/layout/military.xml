@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabMilitary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblMilitary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Military" />
+
+        <TextView
+            android:id="@+id/txtMilitary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblForce"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Military" />
+
+        <TextView
+            android:id="@+id/txtForce"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </TableRow>    
+    
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblSquadSize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Military" />
+
+        <TextView
+            android:id="@+id/txtSquadSize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </TableRow> 
+    
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblCondition"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Military" />
+
+        <TextView
+            android:id="@+id/txtCondition"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </TableRow>     
+</TableLayout>
