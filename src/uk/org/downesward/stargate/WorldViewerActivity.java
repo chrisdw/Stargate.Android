@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.io.Reader;
 
+import android.app.AlertDialog;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -31,6 +32,8 @@ public class WorldViewerActivity extends TabActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		try
+		{
 		setContentView(R.layout.worldviewer);
 
 		Resources res = getResources(); // Resource object to get Drawables
@@ -153,6 +156,14 @@ public class WorldViewerActivity extends TabActivity {
 			}
 		}
 		tabHost.setCurrentTab(0);
+		}
+		catch (Exception e) {
+			AlertDialog.Builder builder = new AlertDialog.Builder(getCurrentActivity());
+			builder.setMessage(e.getLocalizedMessage())
+		       .setTitle(e.getMessage());
+			AlertDialog dialog = builder.create();
+			dialog.show();
+		}
 	}
 	
 	@Override
