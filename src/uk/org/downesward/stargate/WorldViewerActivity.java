@@ -8,6 +8,7 @@ import java.io.Reader;
 
 import android.app.AlertDialog;
 import android.app.TabActivity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -157,10 +158,25 @@ public class WorldViewerActivity extends TabActivity {
 		}
 		tabHost.setCurrentTab(0);
 		}
-		catch (Exception e) {
+		catch (Throwable e) {
+			// Something is dying in real life - need to find out what.
 			AlertDialog.Builder builder = new AlertDialog.Builder(getCurrentActivity());
 			builder.setMessage(e.getLocalizedMessage())
 		       .setTitle(e.getMessage());
+			builder.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog,int id) {
+					// if this button is clicked, close
+					// current activity
+					WorldViewerActivity.this.finish();
+				}
+			  });
+			builder.setNegativeButton("No",new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog,int id) {
+					// if this button is clicked, just close
+					// the dialog box and do nothing
+					dialog.cancel();
+				}
+			});			
 			AlertDialog dialog = builder.create();
 			dialog.show();
 		}
