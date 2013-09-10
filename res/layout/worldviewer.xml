@@ -3,36 +3,23 @@
 	android:layout_width="match_parent" android:layout_height="match_parent"
 	android:orientation="vertical">
 
-	<TabHost android:id="@android:id/tabhost" android:layout_width="match_parent"
-		android:layout_height="match_parent">
+    
+        <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+    >
+            <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/pager_title_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#33b5e5"
+            android:textColor="#fff"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
 
-		<LinearLayout android:id="@+id/linearLayout1"
-			android:layout_width="match_parent" android:layout_height="match_parent"
-			android:orientation="vertical">
-
-			<TabWidget android:id="@android:id/tabs"
-				android:layout_width="match_parent" android:layout_height="wrap_content" />
-
-
-			<FrameLayout android:id="@android:id/tabcontent"
-				android:layout_width="match_parent" android:layout_height="match_parent">
-
-				<include layout="@layout/thermosphere"/>
-				<include layout="@layout/atmosphere"/>
-				<include layout="@layout/hydrosphere"/>
-				<include layout="@layout/geospherebasic"/>
-				<include layout="@layout/geospheretectonic"/>
-				<include layout="@layout/biosphere"/>
-				<include layout="@layout/seasons"/>
-				<include layout="@layout/anthrosphere"/>
-				<include layout="@layout/military"/>
-				<include layout="@layout/government"/>
-				<include layout="@layout/xenophobia"/>
-				<include layout="@layout/civilrights"/>
-				<include layout="@layout/origin"/>
-				<include layout="@layout/notes"/>
-			</FrameLayout>
-		</LinearLayout>
-	</TabHost>
+    </android.support.v4.view.ViewPager>
+   
 
 </LinearLayout>

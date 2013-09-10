@@ -24,7 +24,7 @@
             android:id="@+id/lblRuler"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/val_government" />
+            android:text="@string/val_ruler" />
 
         <TextView
             android:id="@+id/txtRuler"
