@@ -116,7 +116,7 @@ public class WorldViewerActivity extends Activity {
 			// Something is dying in real life - need to find out what.
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
 			builder.setMessage(e.getLocalizedMessage())
-		       .setTitle(e.getMessage());
+		       .setTitle("Exception");
 			builder.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog,int id) {
 					// if this button is clicked, close

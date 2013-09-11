@@ -30,11 +30,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		boolean dbExist = checkDataBase();
+//		boolean dbExist = checkDataBase();
 
-		if (dbExist) {
-			// do nothing - database already exist
-		} else {
+//		if (dbExist) {
+//			// do nothing - database already exist
+//		} else {
 			try {
 
 				copyDataBase();
@@ -44,7 +44,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 				throw new Error("Error copying database");
 
 			}
-		}
+//		}
 
 	}
 
