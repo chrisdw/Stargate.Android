@@ -39,10 +39,11 @@ public class PlotGeneratorActivity extends Activity {
 	}	
 	
 	private void generatePlot() {
+		SQLiteDatabase db = null;
 		try
 		{
 			DatabaseHelper dbh = new DatabaseHelper(this);
-			SQLiteDatabase db = dbh.getReadableDatabase();
+			db = dbh.getReadableDatabase();
 			// Plot type
 			Cursor res = db.rawQuery("SELECT BaseId, PlotType, Description FROM PlotType", null);
 			Dice die = new Dice(res.getCount());
@@ -68,7 +69,7 @@ public class PlotGeneratorActivity extends Activity {
 			// Something is dying in real life - need to find out what.
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
 			builder.setMessage(e.getLocalizedMessage())
-		       .setTitle("Exception");
+		       .setTitle(db.getPath());
 			builder.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog,int id) {
 					// if this button is clicked, close
