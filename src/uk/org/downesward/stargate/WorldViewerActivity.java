@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.io.Reader;
-import java.util.List;
 import java.util.Vector;
 
 
@@ -22,7 +21,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
 import com.lamerman.FileDialog;
 import com.lamerman.SelectionMode;

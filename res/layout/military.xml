@@ -13,7 +13,7 @@
             android:id="@+id/lblMilitary"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Military" />
+            android:text="@string/val_military" />
 
         <TextView
             android:id="@+id/txtMilitary"
@@ -32,7 +32,7 @@
             android:id="@+id/lblForce"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Force" />
+            android:text="@string/val_force" />
 
         <TextView
             android:id="@+id/txtForce"
@@ -51,7 +51,7 @@
             android:id="@+id/lblSquadSize"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Squad Size" />
+            android:text="@string/val_squadsize" />
 
         <TextView
             android:id="@+id/txtSquadSize"
@@ -70,7 +70,7 @@
             android:id="@+id/lblCondition"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Condition" />
+            android:text="@string/val_condition" />
 
         <TextView
             android:id="@+id/txtCondition"

@@ -47,5 +47,12 @@
 	<string name="val_notes">Notes</string>  
 	<string name="val_worlds">Worlds</string>  
 	<string name="val_scenarios">Scenarios</string>  
-		
+	<string name="val_plottype">Plot Type</string> 
+	<string name="val_hook">Hook</string> 
+	<string name="val_gatetraffic">Gate Traffic</string> 
+	<string name="val_generate">Generate</string> 
+	<string name="val_military">Military</string> 
+	<string name="val_force">Force</string> 
+	<string name="val_squadsize">Squad Size</string> 
+	<string name="val_condition">Condition</string>  
 </resources>

@@ -8,7 +8,6 @@ import java.io.OutputStream;
 import android.content.Context;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -22,10 +21,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 	private final Context myContext;
 
-	public DatabaseHelper(Context context, String name, CursorFactory factory,
-			int version) {
-		super(context, name, factory, version);
-		DB_PATH = context.getFilesDir().getPath() + "data/Stargate.Android/databases/";
+	public DatabaseHelper(Context context) {
+		super(context, DB_NAME, null, 1);
+		// DB_PATH includes Database name
+		DB_PATH = context.getDatabasePath(DB_NAME).toString();
 		this.myContext = context;
 	}
 
@@ -36,13 +35,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		if (dbExist) {
 			// do nothing - database already exist
 		} else {
-
-			// By calling this method and empty database will be created into
-			// the default system path
-			// of your application so we are gonna be able to overwrite that
-			// database with our database.
-			this.getReadableDatabase();
-
 			try {
 
 				copyDataBase();
@@ -73,8 +65,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		SQLiteDatabase checkDB = null;
 
 		try {
-			String myPath = DB_PATH + DB_NAME;
-			checkDB = SQLiteDatabase.openDatabase(myPath, null,
+			checkDB = SQLiteDatabase.openDatabase(DB_PATH, null,
 					SQLiteDatabase.OPEN_READONLY);
 
 		} catch (SQLiteException e) {
@@ -102,11 +93,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		// Open your local db as the input stream
 		InputStream myInput = myContext.getAssets().open(DB_NAME);
 
-		// Path to the just created empty db
-		String outFileName = DB_PATH + DB_NAME;
-
 		// Open the empty db as the output stream
-		OutputStream myOutput = new FileOutputStream(outFileName);
+		OutputStream myOutput = new FileOutputStream(DB_PATH);
 
 		// transfer bytes from the inputfile to the outputfile
 		byte[] buffer = new byte[1024];
@@ -125,8 +113,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	public void openDataBase() throws SQLException {
 
 		// Open the database
-		String myPath = DB_PATH + DB_NAME;
-		myDataBase = SQLiteDatabase.openDatabase(myPath, null,
+		myDataBase = SQLiteDatabase.openDatabase(DB_PATH, null,
 				SQLiteDatabase.OPEN_READWRITE);
 
 	}

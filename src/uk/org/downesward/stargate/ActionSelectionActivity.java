@@ -23,12 +23,12 @@ public class ActionSelectionActivity extends Activity {
 
 		butGen = (Button) this.findViewById(R.id.butScenarios);
 
-//		butGen.setOnClickListener(new View.OnClickListener() {
-//			public void onClick(View v) {
-//				Intent intent = new Intent(ActionSelectionActivity.this,
-//						EncounterConfigurationActivity.class);
-//				startActivity(intent);
-//			}         
-//		});
+		butGen.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(ActionSelectionActivity.this,
+						PlotGeneratorActivity.class);
+				startActivity(intent);
+			}         
+		});
 	}
 }
