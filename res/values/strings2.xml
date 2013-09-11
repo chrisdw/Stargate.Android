@@ -54,5 +54,6 @@
 	<string name="val_military">Military</string> 
 	<string name="val_force">Force</string> 
 	<string name="val_squadsize">Squad Size</string> 
-	<string name="val_condition">Condition</string>  
+	<string name="val_condition">Condition</string>
+	<string name="val_goal">Goal</string>   
 </resources>

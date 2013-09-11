@@ -3,6 +3,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
     
+     <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblHook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_hook" />
+
+        <TextView
+            android:id="@+id/txtHook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtHookDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />        
+    </TableRow>  
+    
+         <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblGoal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_goal" />
+
+        <TextView
+            android:id="@+id/txtGoal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+        
+        <TextView
+            android:id="@+id/txtGoalDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />        
+
+    </TableRow>
+    
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
@@ -27,26 +74,5 @@
 
     </TableRow>
     
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/lblHook"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/val_hook" />
-
-        <TextView
-            android:id="@+id/txtHook"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="" />
-
-        <TextView
-            android:id="@+id/txtHookDesc"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="" />        
-    </TableRow>    
+  
 </TableLayout>

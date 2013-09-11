@@ -44,26 +44,47 @@ public class PlotGeneratorActivity extends Activity {
 		{
 			DatabaseHelper dbh = new DatabaseHelper(this);
 			db = dbh.getReadableDatabase();
-			// Plot type
-			Cursor res = db.rawQuery("SELECT BaseId, PlotType, Description FROM PlotType", null);
+			// Hook
+			Cursor res = db.rawQuery("SELECT BaseId, Hook, Description FROM Hook", null);
 			Dice die = new Dice(res.getCount());
 			int row = die.roll();
-			if (res.moveToPosition(row)) {
-				TextView tv = (TextView) this.findViewById(R.id.txtPlotType);
-				tv.setText(res.getString(1));
-				tv = (TextView) this.findViewById(R.id.txtPlotTypeDesc);
-				tv.setText(res.getString(2));
-			}
-			// Hook
-			res = db.rawQuery("SELECT BaseId, Hook, Description FROM Hook", null);
-			die = new Dice(res.getCount());
-			row = die.roll();
 			if (res.moveToPosition(row)) {
 				TextView tv = (TextView) this.findViewById(R.id.txtHook);
 				tv.setText(res.getString(1));
 				tv = (TextView) this.findViewById(R.id.txtHookDesc);
 				tv.setText(res.getString(2));
 			}
+			
+			// Goal
+			res = db.rawQuery("SELECT BaseId, Goal, Description FROM Goal", null);
+			die = new Dice(res.getCount());
+			row = die.roll();
+			if (res.moveToPosition(row)) {
+				TextView tv = (TextView) this.findViewById(R.id.txtGoal);
+				tv.setText(res.getString(1));
+				tv = (TextView) this.findViewById(R.id.txtGoalDesc);
+				tv.setText(res.getString(2));
+			}
+			
+			// Plot type
+			res = db.rawQuery("SELECT BaseId, PlotType, Description FROM PlotType", null);
+			die = new Dice(res.getCount());
+			row = die.roll();
+			if (res.moveToPosition(row)) {
+				TextView tv = (TextView) this.findViewById(R.id.txtPlotType);
+				tv.setText(res.getString(1));
+				tv = (TextView) this.findViewById(R.id.txtPlotTypeDesc);
+				tv.setText(res.getString(2));
+			}
+			
+			// Setting
+			
+			// Location
+			
+			// Encounters
+			
+			// Climax
+
 		}
 		catch (Throwable e) {
 			// Something is dying in real life - need to find out what.
