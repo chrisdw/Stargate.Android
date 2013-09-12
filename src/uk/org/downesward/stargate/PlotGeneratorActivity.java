@@ -61,7 +61,7 @@ public class PlotGeneratorActivity extends Activity {
 			res = db.getGoals();
 			die = new Dice(res.getCount());
 			row = die.roll();
-			if (res.moveToPosition(row)) {
+			if (res.moveToPosition(row-1)) {
 				TextView tv = (TextView) this.findViewById(R.id.txtGoal);
 				tv.setText(res.getString(1));
 				tv = (TextView) this.findViewById(R.id.txtGoalDesc);
@@ -72,7 +72,7 @@ public class PlotGeneratorActivity extends Activity {
 			res = db.getPlots();
 			die = new Dice(res.getCount());
 			row = die.roll();
-			if (res.moveToPosition(row)) {
+			if (res.moveToPosition(row-1)) {
 				TextView tv = (TextView) this.findViewById(R.id.txtPlotType);
 				tv.setText(res.getString(1));
 				tv = (TextView) this.findViewById(R.id.txtPlotTypeDesc);
@@ -83,7 +83,7 @@ public class PlotGeneratorActivity extends Activity {
 			res = db.getSettings();
 			die = new Dice(res.getCount());
 			row = die.roll();
-			if (res.moveToPosition(row)) {
+			if (res.moveToPosition(row-1)) {
 				TextView tv = (TextView) this.findViewById(R.id.txtSetting);
 				tv.setText(res.getString(1));
 				tv = (TextView) this.findViewById(R.id.txtSettingDesc);
@@ -93,7 +93,7 @@ public class PlotGeneratorActivity extends Activity {
 			res = db.getNPCs();
 			die = new Dice(res.getCount());
 			row = die.roll();
-			if (res.moveToPosition(row)) {
+			if (res.moveToPosition(row-1)) {
 				TextView tv = (TextView) this.findViewById(R.id.txtNPC);
 				tv.setText(res.getString(1));
 				tv = (TextView) this.findViewById(R.id.txtNPCDesc);
@@ -107,7 +107,7 @@ public class PlotGeneratorActivity extends Activity {
 			res = db.getLocation();
 			die = new Dice(res.getCount());
 			row = die.roll();
-			if (res.moveToPosition(row)) {
+			if (res.moveToPosition(row-1)) {
 				TextView tv = (TextView) this.findViewById(R.id.txtLocation);
 				tv.setText(res.getString(1));
 				tv = (TextView) this.findViewById(R.id.txtLocationDesc);
@@ -117,7 +117,7 @@ public class PlotGeneratorActivity extends Activity {
 			res = db.getEncounters();
 			die = new Dice(res.getCount());
 			row = die.roll();
-			if (res.moveToPosition(row)) {
+			if (res.moveToPosition(row-1)) {
 				TextView tv = (TextView) this.findViewById(R.id.txtEncounters);
 				tv.setText(res.getString(1));
 				tv = (TextView) this.findViewById(R.id.txtEncountersDesc);
@@ -127,7 +127,7 @@ public class PlotGeneratorActivity extends Activity {
 			res = db.getClimaxes();
 			die = new Dice(res.getCount());
 			row = die.roll();
-			if (res.moveToPosition(row)) {
+			if (res.moveToPosition(row-1)) {
 				TextView tv = (TextView) this.findViewById(R.id.txtClimax);
 				tv.setText(res.getString(1));
 				tv = (TextView) this.findViewById(R.id.txtClimaxDesc);
