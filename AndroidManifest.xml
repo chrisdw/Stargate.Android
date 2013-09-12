@@ -20,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".WorldViewerActivity" />
+        <activity android:name=".KnownWorldSelectionActivity" />
         <activity android:name=".PlotGeneratorActivity" />
         <activity android:name="com.lamerman.FileDialog" >
         </activity>
