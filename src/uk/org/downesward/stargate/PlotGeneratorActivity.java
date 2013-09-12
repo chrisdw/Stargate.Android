@@ -13,10 +13,15 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 public class PlotGeneratorActivity extends Activity {
+	
+	private DatabaseHelper db;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.plotgenerator);
+		
+		db = new DatabaseHelper(this); 
 	}
 	
 	@Override
@@ -39,13 +44,11 @@ public class PlotGeneratorActivity extends Activity {
 	}	
 	
 	private void generatePlot() {
-		SQLiteDatabase db = null;
 		try
 		{
-			DatabaseHelper dbh = new DatabaseHelper(this);
-			db = dbh.getReadableDatabase();
+			
 			// Hook
-			Cursor res = db.rawQuery("SELECT BaseId, Hook, Description FROM Hook", null);
+			Cursor res = db.getHooks();
 			Dice die = new Dice(res.getCount());
 			int row = die.roll();
 			if (res.moveToPosition(row)) {
@@ -56,7 +59,7 @@ public class PlotGeneratorActivity extends Activity {
 			}
 			
 			// Goal
-			res = db.rawQuery("SELECT BaseId, Goal, Description FROM Goal", null);
+			res = db.getGoals();
 			die = new Dice(res.getCount());
 			row = die.roll();
 			if (res.moveToPosition(row)) {
@@ -67,7 +70,7 @@ public class PlotGeneratorActivity extends Activity {
 			}
 			
 			// Plot type
-			res = db.rawQuery("SELECT BaseId, PlotType, Description FROM PlotType", null);
+			res = db.getPlots();
 			die = new Dice(res.getCount());
 			row = die.roll();
 			if (res.moveToPosition(row)) {
@@ -78,6 +81,8 @@ public class PlotGeneratorActivity extends Activity {
 			}
 			
 			// Setting
+			
+			// NPC
 			
 			// Location
 			
@@ -90,7 +95,7 @@ public class PlotGeneratorActivity extends Activity {
 			// Something is dying in real life - need to find out what.
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
 			builder.setMessage(e.getLocalizedMessage())
-		       .setTitle(db.getPath());
+		       .setTitle("Exception");
 			builder.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog,int id) {
 					// if this button is clicked, close
@@ -101,5 +106,11 @@ public class PlotGeneratorActivity extends Activity {
 			AlertDialog dialog = builder.create();
 			dialog.show();
 		}
+	}
+	
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		db.close();
 	}
 }
