@@ -184,7 +184,7 @@
             android:id="@+id/lblClimax"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/val_encounters" />
+            android:text="@string/val_climax" />
 
         <TextView
             android:id="@+id/txtClimax"
