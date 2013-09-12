@@ -55,5 +55,12 @@
 	<string name="val_force">Force</string> 
 	<string name="val_squadsize">Squad Size</string> 
 	<string name="val_condition">Condition</string>
-	<string name="val_goal">Goal</string>   
+	<string name="val_goal">Goal</string> 
+	<string name="val_setting">Setting</string>
+	<string name="val_npc">NPC</string>  
+	<string name="val_location">Location</string>
+	<string name="val_encounters">Encounters</string> 
+	<string name="val_climax">Climax</string>
+	<string name="val_ok">OK</string>
+	<string name="val_exception">Exception</string>
 </resources>

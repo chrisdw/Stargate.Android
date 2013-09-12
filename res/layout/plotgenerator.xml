@@ -2,8 +2,8 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-    
-     <TableRow
+
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
@@ -23,10 +23,10 @@
             android:id="@+id/txtHookDesc"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="" />        
-    </TableRow>  
-    
-         <TableRow
+            android:text="" />
+    </TableRow>
+
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
@@ -41,15 +41,14 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="" />
-        
+
         <TextView
             android:id="@+id/txtGoalDesc"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="" />        
-
+            android:text="" />
     </TableRow>
-    
+
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
@@ -65,14 +64,138 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="" />
-        
+
         <TextView
             android:id="@+id/txtPlotTypeDesc"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="" />        
+            android:text="" />
+    </TableRow>
 
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_setting" />
+
+        <TextView
+            android:id="@+id/txtSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtSettingDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblNPC"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_npc" />
+
+        <TextView
+            android:id="@+id/txtNPC"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtNPCDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtNPCRelativeLevel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtNPCReaction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_location" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtLocationDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
     </TableRow>
     
-  
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblEncounters"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_encounters" />
+
+        <TextView
+            android:id="@+id/txtEncounters"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtEncountersDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>    
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblClimax"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/val_encounters" />
+
+        <TextView
+            android:id="@+id/txtClimax"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtClimaxDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>       
 </TableLayout>
