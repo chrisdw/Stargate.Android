@@ -63,4 +63,5 @@
 	<string name="val_climax">Climax</string>
 	<string name="val_ok">OK</string>
 	<string name="val_exception">Exception</string>
+	<string name="val_pressure">Pressure</string>
 </resources>
