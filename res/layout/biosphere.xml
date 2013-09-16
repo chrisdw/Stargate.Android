@@ -14,7 +14,7 @@
             android:id="@+id/lblBiosphere"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Biosphere" />
+            android:text="@string/val_biosphere" />
 
         <TextView
             android:id="@+id/txtBiosphere"
@@ -33,7 +33,7 @@
             android:id="@+id/lblMove"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Move" />
+            android:text="@string/val_move" />
 
         <TextView
             android:id="@+id/txtMove"
@@ -52,7 +52,7 @@
             android:id="@+id/lblTemperature"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Temperature" />
+            android:text="@string/val_temperature" />
 
         <TextView
             android:id="@+id/txtTemperature"
@@ -71,7 +71,7 @@
             android:id="@+id/lblRain"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Rain" />
+            android:text="@string/val_rain" />
 
         <TextView
             android:id="@+id/txtRain"
@@ -82,7 +82,7 @@
     </TableRow> 
         
     <TableRow
-        android:id="@+id/tableRow4"
+        android:id="@+id/tableRow5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
@@ -90,7 +90,7 @@
             android:id="@+id/lblVegetation"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Vegetation" />
+            android:text="@string/val_vegetation" />
 
         <TextView
             android:id="@+id/txtVegetation"

@@ -56,7 +56,7 @@
             android:id="@+id/lblPen"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Pen" />
+            android:text="@string/val_pen" />
 
         <TextView
             android:id="@+id/txtPen"
@@ -71,7 +71,7 @@
             android:id="@+id/lblIncrement"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Increment" />
+            android:text="@string/val_inrement" />
 
         <TextView
             android:id="@+id/txtIncrement"
@@ -86,7 +86,7 @@
             android:id="@+id/lblSave"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Save" />
+            android:text="@string/val_save" />
 
         <TextView
             android:id="@+id/txtSave"
@@ -101,7 +101,7 @@
             android:id="@+id/lblDamage"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Damage" />
+            android:text="@string/val_damage" />
 
         <TextView
             android:id="@+id/txtDamage"

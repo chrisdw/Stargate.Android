@@ -11,7 +11,7 @@
             android:id="@+id/lblHydrosphere"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Hydrosphere" />
+            android:text="@string/val_hydrosphere" />
 
         <TextView
             android:id="@+id/txtHydrosphere"
@@ -26,7 +26,7 @@
             android:id="@+id/lblRain"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Rain" />
+            android:text="@string/val_rain" />
 
         <TextView
             android:id="@+id/txtRain"
@@ -41,7 +41,7 @@
             android:id="@+id/lblNone"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="None" />
+            android:text="@string/val_none" />
 
         <TextView
             android:id="@+id/txtNone"
@@ -56,7 +56,7 @@
             android:id="@+id/lblFlood"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Flood" />
+            android:text="@string/val_flood" />
 
         <TextView
             android:id="@+id/txtFlood"
@@ -71,7 +71,7 @@
             android:id="@+id/lblStorm"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Storm" />
+            android:text="@string/val_storm" />
 
         <TextView
             android:id="@+id/txtStorm"
@@ -86,7 +86,7 @@
             android:id="@+id/lblWind"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Wind" />
+            android:text="@string/val_wind" />
 
         <TextView
             android:id="@+id/txtWind"

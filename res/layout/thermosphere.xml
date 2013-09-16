@@ -11,7 +11,7 @@
             android:id="@+id/lblThermos"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Thermosphere" />
+            android:text="@string/val_thermosphere" />
 
         <TextView
             android:id="@+id/txtThermos"
@@ -40,7 +40,7 @@
             android:id="@+id/lblOrbit"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Orbit" />
+            android:text="@string/val_orbit" />
 
         <TextView
             android:id="@+id/txtOrbit"
@@ -55,7 +55,7 @@
             android:id="@+id/lblTemperature"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Temperature" />
+            android:text="@string/val_temperature" />
 
         <TextView
             android:id="@+id/txtTemperature"
